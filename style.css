@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Kalam', cursive;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.add {
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin:5vw 6vw 8vw 6vw ;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.note .tools {
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  border-bottom: 2px dotted gray;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note .tools button:hover{
+  color: rgb(85, 66, 66);
+}
+
+.note .main {
+  background-color: #eee;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+.note textarea {
+  outline:none;
+  font-family: 'Kalam', cursive;
+  font-size: 1.4rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+}
+
+.note .hidden {
+  display: none;
+}
